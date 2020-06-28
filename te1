@@ -1,1 +1,124 @@
-print (hello)
+virtural box  
+ IP NAT      vm(centos) →host →internet
+    host-only host　→ vm(centos)
+    
+centos install 時　ネットワーク設定
+
+yum update
+yum upgrade
+yum install net-tools
+
+
+teraterm install
+ssh root login OK
+vi /etc/ssh/sshd_config
+PermitRootLogin yes
+PermitEmptyPasswords no
+PasswordAuthentication yes
+https://qiita.com/shiro01/items/ef899889273e6247f94e
+
+https://qiita.com/ymasaoka/items/b6c3ffea060bcd237478
+
+
+[root@cho ~]# history
+    1  vi /etc/ssh/sshd_config
+    2  getenforce
+    3  visudo
+    4  yum install wget
+    5  yum install vim
+    6  yum group --help
+    7  yum group install "Development Tools"
+    8  cat /etc/centos-release
+    9  git -v
+   10  git -version
+   11  yum install git
+   12  git --version
+   13  python --version
+   14  ruby --version
+   15  yum install ruby
+   16  ruby --version
+   17  vim /etc/selinux/config
+   18  yum install bind-utils
+   19  date
+   20  yum install bash-completion
+   21  yum install epel-release
+   22  yum install sl
+   23  ls
+   24  ls -la
+   25  yum install man-page
+   26  yum install sysstat psmisc iptraf-ng htop lsof iotop
+   27  yum install nkf
+   28  yum install aria2
+   29  yum install tree
+   30  history
+   
+   
+   systemctl stop firewalld
+   
+   systemctl disable firewalld
+   
+   
+   
+       1  vi /etc/ssh/sshd_config
+    2  getenforce
+    3  visudo
+    4  yum install wget
+    5  yum install vim
+    6  yum group --help
+    7  yum group install "Development Tools"
+    8  cat /etc/centos-release
+    9  git -v
+   10  git -version
+   11  yum install git
+   12  git --version
+   13  python --version
+   14  ruby --version
+   15  yum install ruby
+   16  ruby --version
+   17  vim /etc/selinux/config
+   18  yum install bind-utils
+   19  date
+   20  yum install bash-completion
+   21  yum install epel-release
+   22  yum install sl
+   23  ls
+   24  ls -la
+   25  yum install man-page
+   26  yum install sysstat psmisc iptraf-ng htop lsof iotop
+   27  yum install nkf
+   28  yum install aria2
+   29  yum install tree
+   30  history
+   31  yum check-update
+   32  yum -y install yum-plugin-priorities
+   33  yum install -y yum-utils device-mapper-persistent-data lvm2
+   34  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   35   yum install -y docker-ce docker-ce-cli containerd.io
+   36  systemctl start docker
+   37  systemctl enable docker
+   38  docker --version
+   39  setenforce 0
+   40  getenforce
+   41  curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+   42   chmod +x /usr/local/bin/docker-compose
+   43   docker-compose --version
+   44  su - cho
+   45  passd cho
+   46  passwd cho
+   47  su - cho
+   48  history
+   
+   
+   
+    1  echo $USER
+    2  sudo usermod -aG docker $USER
+    3  exit
+    4  sudo usermod -aG docker $USER
+    5  id $USER
+    6  sudo systemctl restart docker
+    7  sudo systemctl status docker
+    8  history
+    
+    
+    
+    https://qiita.com/myoshimi/items/87fca5a4f9b1df78bb48
